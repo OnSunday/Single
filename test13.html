@@ -14,10 +14,11 @@
 <script type="text/javascript">
 
 function show() {
-
      var value = document.getElementById("aqi-input").value;
-     document.getElementById("aqi-display").innerHTML = value;
-
+     if(value != "")
+     {
+         document.getElementById("aqi-display").innerHTML = value;     	
+     }
 }
 
 </script>
